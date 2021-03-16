@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GlobalHotKey" Version="1.1.0" />
+    <PackageReference Include="HotkeyListener" Version="1.9.0" />
+    <PackageReference Include="TouchPortalSDK" Version="0.23.0-beta-004" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="entry.tp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

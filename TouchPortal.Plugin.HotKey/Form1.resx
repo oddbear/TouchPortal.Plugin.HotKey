@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="hotkeySelector.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="tbInformation.Text" xml:space="preserve">
+    <value>Hi there, seems like you tried to register a unknown key.
+
+You might want to try adding it to the keymap file. Just select the right textbox and click the key on the keyboard, then save.
+
+The change should happend next time you change settings or restarts touch portal.
+</value>
+  </data>
 </root>

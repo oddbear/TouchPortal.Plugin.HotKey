@@ -1,5 +1,7 @@
 using System;
+using System.IO;
 using System.Windows.Forms;
+using System.Windows.Threading;
 
 namespace TouchPortal.Plugin.HotKey
 {
@@ -14,7 +16,14 @@ namespace TouchPortal.Plugin.HotKey
             //Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            if (!File.Exists("key.map"))
+                File.WriteAllText("key.map", "");
+
+            var listener = new TouchPortalListener(Dispatcher.CurrentDispatcher);
+            listener.Connect();
+
+            Application.Run();
         }
     }
 }

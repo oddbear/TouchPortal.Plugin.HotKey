@@ -1,0 +1,58 @@
+{
+  "sdk": 3,
+  "version": 1,
+  "name": "HotKeys TouchPortal Plugin",
+  "id": "oddbear.touchportal.hotkeys",
+  "plugin_start_cmd": "%TP_PLUGIN_FOLDER%TouchPortal.Plugin.HotKey\\TouchPortal.Plugin.HotKey.exe",
+  "configuration": {
+    "colorDark": "#59B1B6",
+    "colorLight": "#59B1B6"
+  },
+  "settings": [
+    { "name": "HotKey1", "type": "text" },
+    { "name": "HotKey2", "type": "text" },
+    { "name": "HotKey3", "type": "text" },
+    { "name": "HotKey4", "type": "text" },
+    { "name": "HotKey5", "type": "text" },
+    { "name": "HotKey6", "type": "text" },
+    { "name": "HotKey7", "type": "text" },
+    { "name": "HotKey8", "type": "text" },
+    { "name": "HotKey9", "type": "text" }
+  ],
+  "categories": [
+    {
+      "id": "oddbear.touchportal.hotkeys.category",
+      "name": "HotKeys",
+      "actions": [],
+      "states": [
+        {
+          "id": "oddbear.touchportal.hotkey.state",
+          "type": "text",
+          "desc": "Last pressed hotkey.",
+          "default": "none"
+        }
+      ],
+      "events": [
+        {
+          "id": "oddbear.touchportal.hotkey.event",
+          "name": "Test Event",
+          "format": "Test val: $val",
+          "type": "communicate",
+          "valueType": "choice",
+          "valueChoices": [
+            "HotKey1",
+            "HotKey2",
+            "HotKey3",
+            "HotKey4",
+            "HotKey5",
+            "HotKey6",
+            "HotKey7",
+            "HotKey8",
+            "HotKey9"
+          ],
+          "valueStateId": "oddbear.touchportal.hotkey.state"
+        }
+      ]
+    }
+  ]
+}
