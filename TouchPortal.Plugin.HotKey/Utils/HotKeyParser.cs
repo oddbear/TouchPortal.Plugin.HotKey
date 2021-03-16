@@ -50,7 +50,7 @@ namespace TouchPortal.Plugin.HotKey.Utils
                 //Replace key:
                 var trueKey = line.Substring(0, index);
                 var falseKey = line.Substring(index + 1);
-                if (key == falseKey)
+                if (key.Equals(falseKey, StringComparison.OrdinalIgnoreCase))
                 {
                     key = trueKey;
                 }

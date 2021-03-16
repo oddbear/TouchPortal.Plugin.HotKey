@@ -28,9 +28,7 @@ namespace TouchPortal.Plugin.HotKey
             _dispatcher = dispatcher;
 
             _hotkeyListener = new HotkeyListener();
-            _hotkeyListener.HotkeyPressed += HotkeyListener1OnHotkeyPressed;
-            //var form = new Form1(client, listener);
-            //form.HideForm();
+            _hotkeyListener.HotkeyPressed += HotkeyListenerOnHotkeyPressed;
         }
 
         public void Connect()
@@ -88,7 +86,7 @@ namespace TouchPortal.Plugin.HotKey
             });
         }
 
-        private void HotkeyListener1OnHotkeyPressed(object sender, HotkeyEventArgs e)
+        private void HotkeyListenerOnHotkeyPressed(object sender, HotkeyEventArgs e)
         {
             var key = _hotkeys.FirstOrDefault(k => k.HotKey.Equals(e.Hotkey));
             if (key == null)
@@ -116,6 +114,8 @@ namespace TouchPortal.Plugin.HotKey
                 form.Top = position.Top + ((tpHeight - form.Height) / 2);
             }
 
+            form.TopMost = true;
+            form.BringToFront();
             form.ShowDialog();
         }
 

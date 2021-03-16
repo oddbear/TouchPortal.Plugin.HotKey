@@ -147,7 +147,6 @@ namespace TouchPortal.Plugin.HotKey
         #endregion
 
         private WK.Libraries.HotkeyListenerNS.HotkeySelector hotkeySelector;
-        private WK.Libraries.HotkeyListenerNS.HotkeyListener hotkeyListener1;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox tbHotkeySelector;
