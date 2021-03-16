@@ -3,8 +3,8 @@ Hotkey Plugin for TouchPortal 2.3+ Windows.
 
 This plugin can be used to bind hotkeys on the keyboard to TouchPortal events that trigger will other actions.
 
-![Settings dialog](.\Assets\settings.png)
-![Event setup](.\Assets\events.png)
+![Settings dialog](./Assets/settings.png)
+![Event setup](./Assets/events.png)
 
 This plugin is in a **early stage**, and does have limits when it somes to unicode caracters.
 
