@@ -1,7 +1,7 @@
 # WIP: TouchPortal.Plugin.HotKey
 Hotkey Plugin for TouchPortal 2.3+ Windows.
 
-This plugin can be used to bind hotkeys on the keyboard to TouchPortal events that trigger will other actions.
+This plugin can be used to bind hotkeys on the keyboard to TouchPortal events that will trigger other actions.
 
 ![Settings dialog](./Assets/settings.png)
 ![Event setup](./Assets/events.png)
