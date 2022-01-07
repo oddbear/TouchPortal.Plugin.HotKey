@@ -24,6 +24,7 @@ namespace TouchPortal.Plugin.HotKey.Utils
             {
                 modifiers |= Keys.Control;
                 hotkey = Regex.Replace(hotkey, "Control", "", RegexOptions.IgnoreCase);
+                hotkey = Regex.Replace(hotkey, "Ctrl", "", RegexOptions.IgnoreCase);
             }
 
             if (hotkey.Contains("Shift", StringComparison.OrdinalIgnoreCase))
